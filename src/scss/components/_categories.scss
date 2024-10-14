@@ -1,0 +1,32 @@
+@import "../variables";
+
+.categories {
+  ul {
+    display: flex;
+
+    li {
+      background-color: #f9f9f9;
+      padding: 13px 30px;
+      color: #df3dbc;
+      border-radius: 30px;
+      margin-right: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.1s ease-in-out;
+      @include noselect();
+
+      &:hover {
+        background-color: #12de56;
+      }
+
+      &:active {
+        background-color: #12de459e;
+      }
+
+      &.active {
+        background-color: #df3dbc;
+        color: #fff;
+      }
+    }
+  }
+}
