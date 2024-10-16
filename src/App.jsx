@@ -15,15 +15,21 @@ function App() {
           <div className="container">
             <div className="content__top">
               <Categories />
+            </div>
+            <div className="content__sort">
               <Sort />
             </div>
+
             <h2 className="content__title">Все пиццы</h2>
             <div className="content__items">
               {pizzas.map((obj) => (
                 <PizzaBlock
+                  key={obj.id}
                   title={obj.title}
                   price={obj.price}
                   image={obj.imageUrl}
+                  sizes={obj.sizes}
+                  types={obj.types}
                 />
               ))}
             </div>

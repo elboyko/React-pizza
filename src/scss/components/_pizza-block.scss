@@ -38,11 +38,15 @@
 
       li {
         padding: 8px;
+        margin-right: 3px;
         flex: 1;
         cursor: pointer;
         font-weight: 600;
         font-size: 14px;
         @include noselect();
+        &:last-child {
+          margin-right: 0;
+        }
         &.active {
           background: #ffffff;
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
