@@ -3,6 +3,7 @@
 .categories {
   ul {
     display: flex;
+    flex-wrap: wrap;
 
     li {
       background-color: #f9f9f9;
@@ -26,6 +27,10 @@
       &.active {
         background-color: #df3dbc;
         color: #fff;
+      }
+      @media (max-width: 800px) {
+        padding: 5px 10px;
+        margin-bottom: 10px;
       }
     }
   }

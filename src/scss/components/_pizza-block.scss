@@ -6,12 +6,8 @@
   margin-bottom: 65px;
   padding: 5px;
 
-  // &:not(:nth-of-type(4n)) {
-  //   margin-right: 35px;
-  // }
-
   &__image {
-    width: 220px;
+    max-width: 220px;
   }
 
   &__title {
@@ -60,7 +56,7 @@
   &__bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
   }
 
